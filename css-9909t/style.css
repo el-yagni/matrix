@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+} 
+
+#btn {
+    position: absolute;
+    color: aliceblue;
+    margin: 35px;
+    font-size: 20px;
+    transition: all .3s ease;
+    z-index: 99;
+}
+
+
+#btn.toggle {
+    transform: rotate(360deg);
+    color: #000;
+}
+
+
+.wrapper {
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+button {
+    padding: 4px;
+    cursor: pointer;
+}
+
+.bxs-cog {
+    display: none;
+}
+
+button.btn {
+    border: none;
+    border-radius: 6px;
+    margin: 2px;
+    border: 1px solid transparent;
+}
+
+button:hover {
+    border: 1px solid #000;
+}
+
+.settings {
+    width: 200px;
+    margin: 30px;
+    transform: translateX(-200%);
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    transition: all .3s ease;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+
+.settings h1 {
+    font-size: 1rem;
+}
+
+.settings.active {
+    transform: translateX(0);
+}
+
+
+body {
+    background-color: black;
+}
+
+
+
+.author {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.2);
+    bottom: 20px;
+    left: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+button.start {
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    background-color: transparent;
+    border: none;
+    font-size: 50px;
+}
