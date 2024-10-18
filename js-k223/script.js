@@ -168,8 +168,8 @@ const random = Math.floor(Math.random() * 3260);
 
 const download = () => {
     let a = document.createElement("a");
-    const dest = canvas.toDataURL("image/jpg", 1.0)
+    const dest = canvas.toDataURL("image/png", 1.0)
     a.href = dest
-    a.download = `matrix${randomAlphabet[Math.floor(Math.random() * 8)]}${random}.jpg`;
+    a.download = `matrix${randomAlphabet[Math.floor(Math.random() * 8)]}${random}.png`;
     a.click(); a.remove()
 }
