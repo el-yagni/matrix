@@ -25,6 +25,8 @@ document.querySelectorAll(".btn").forEach((data) => {
 })
 
 
+
+
 const staticColor = "#008000";
 
 let canvasWidth = window.innerWidth
@@ -32,6 +34,12 @@ let canvasHeight = window.innerHeight
 
 let randomColor = ["#fcdf03", "#fc03f0", "#03cefc", "#fc0303", "#fc03a1", "#00ff2f"];
 
+document.getElementById("max").addEventListener("click", () => {
+    document.body.requestFullscreen()
+    setTimeout(() => {
+        canvas.style.height = "100%";
+    }, 10)
+})
 
 let charrArr = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "1", "2", "3", "5", "5", "6", "<", ">", "?", "{", "}"];
 
